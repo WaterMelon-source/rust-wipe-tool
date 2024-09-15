@@ -2,7 +2,7 @@
 ## Preview
 Here's an example of an app:
 
-![Rust Wipe ToolPreview](assets/preview.png)
+![Rust Wipe Tool Preview](assets/previews.png)
 
 ## Overview
 Rust Wipe Tool is a desktop application built with Python and CustomTkinter, designed to assist Rust server admins with generating new map seeds and managing server wipes. This tool fetches map data directly from `playrust.io` and provides an easy-to-use interface for generating seeds and wiping the server.
