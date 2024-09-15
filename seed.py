@@ -9,12 +9,10 @@ json_url = 'http://playrust.io/maps.json'
 
 # Makes Map Image Rounded
 def create_rounded_image(image, radius):
-    # Create a rounded rectangle mask
     mask = Image.new('L', image.size, 0)
     draw = ImageDraw.Draw(mask)
     draw.rounded_rectangle([0, 0, image.size[0], image.size[1]], radius, fill=255)
 
-    # Apply the mask to the image
     rounded_image = ImageOps.fit(image, mask.size, centering=(0.5, 0.5))
     rounded_image.putalpha(mask)
 
